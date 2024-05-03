@@ -1,0 +1,636 @@
+OZM:
+ model:       OZM
+ manufacturer: ual
+ manufacturer_url: https://openzmeter.com/
+ description: Multifunction meter for feeders
+ sample_period: 60 # the interval between samples. In seconds.
+ max_sample_period: 300
+ measurements:
+ - physical_quantity: power  # power, voltage, energy, current?
+  type: active  # active (real power), reactive or apparent?
+  upper_limit: 10000
+  lower_limit: 0
+ - physical_quantity: power
+  type: apparent
+  upper_limit: 10000
+  lower_limit: 0
+ - physical_quantity: power
+  type: reactive
+  upper_limit: 10000
+  lower_limit: 0
+ - physical_quantity: frequency 
+  type: 
+  upper_limit: 70
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: 
+  upper_limit: 270
+  lower_limit: 0
+ - physical_quantity: pf 
+  type: 
+  upper_limit: 1
+  lower_limit: 0
+ - physical_quantity: current 
+  type: 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic1 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic2 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic3 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic4 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic5 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic6 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic7 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic8 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic9 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic10 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic11 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic12
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic13 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic14 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic15
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic16 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic17  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic18 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic19 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic20 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic21 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic22 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic23 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic24 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic25 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic26 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic27 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic28 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic29 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic30 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage
+  type: armonic31  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic32 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic33 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic34
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic35 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic36
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic37 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic38 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic39 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic40 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic41 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic42
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic43 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic44 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic45 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic46 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic47 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic48 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic49 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: voltage 
+  type: armonic50 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic1 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic2 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current
+  type: armonic3 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic4 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic5 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current
+  type: armonic6 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic7 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic8 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic9 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic10 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic11 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic12 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic13 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic14 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic15 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic16  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic17 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic18 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic19 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic20
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic21 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic22 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic23 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic24 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic25 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic26  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic27 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic28 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic29 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic30 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic31 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic32 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic33 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic34 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic35 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic36  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic37 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic38 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current
+  type: armonic39  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current
+  type: armonic40 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic41 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic42 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic43 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic44 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current
+  type: armonic45  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic46 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic47 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic48 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic49  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: current 
+  type: armonic50 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic1 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic2 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic3 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic4 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic5 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic6 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic7 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic8 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic9 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic10 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic11 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic12 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic13 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power
+  type: armonic14  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic15 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic16 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic17 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power
+  type: armonic18  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic19 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic20 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic21 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic22 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic23  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic24 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic25 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic26
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power
+  type: armonic27  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic28 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic29 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic30 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic31
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic32 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic33 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic34 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic35 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic36 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic37 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic38 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic39 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic40 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic41 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic42 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power
+  type: armonic43  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power
+  type: armonic44  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic45 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power
+  type: armonic46  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic47 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic48  
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic49 
+  upper_limit: 100
+  lower_limit: 0
+ - physical_quantity: power 
+  type: armonic50 
+  upper_limit: 100
+  lower_limit: 0

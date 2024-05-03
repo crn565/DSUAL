@@ -1,0 +1,53 @@
+instance: 1   # this is the first building in the dataset
+original_name: house_1   # original name from REDD dataset
+elec_meters:
+  1: &OZM
+    site_meter: true
+    device_model: OZM
+  2: &OZM2
+    device_model: OZM
+    submeter_of: 1
+  3: &OZM3
+    device_model: OZM
+    submeter_of: 1
+  4: &OZM4
+    device_model: OZM
+    submeter_of: 1
+  5: &OZM5
+    device_model: OZM
+    submeter_of: 1
+  6: &OZM6
+    device_model: OZM
+    submeter_of: 1
+  
+  
+appliances:
+- original_name: fryer
+  type: fryer
+  #floor: 0
+  instance: 1
+  meters: [2]
+
+- original_name: LED lamp
+  type: LED lamp
+  instance: 1
+  #floor: 1
+  meters: [3]
+
+- original_name: incandescent lamp
+  type: incandescent lamp
+  instance: 1
+  #floor: 1
+  meters: [4]
+
+- original_name: laptop computer
+  type: laptop computer
+  instance: 1
+  #floor: 1
+  meters: [5]
+  
+- original_name: fan
+  type: fan
+  instance: 1
+  #floor: 1
+  meters: [6]

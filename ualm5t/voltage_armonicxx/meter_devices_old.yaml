@@ -1,0 +1,636 @@
+OZM:
+  model: OZM
+  manufacturer: ual
+  manufacturer_url: https://openzmeter.com/
+  description: Multifunction meter for feeders
+  sample_period: 60 # the interval between samples. In seconds.
+  max_sample_period: 300
+  measurements:
+  - physical_quantity: power   # power, voltage, energy, current?
+    type: active   # active (real power), reactive or apparent?
+    upper_limit: 10000
+    lower_limit: 0
+  - physical_quantity: power
+    type: apparent
+    upper_limit: 10000
+    lower_limit: 0
+  - physical_quantity: power
+    type: reactive
+    upper_limit: 10000
+    lower_limit: 0
+  - physical_quantity: frequency  
+    type: 
+    upper_limit: 70
+    lower_limit: 0
+  - physical_quantity: voltage 
+    type: 
+    upper_limit: 270
+    lower_limit: 0
+  - physical_quantity: pf 
+    type: 
+    upper_limit: 1
+    lower_limit: 0
+  - physical_quantity: current  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic1  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic2  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic3  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic4  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic5  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic6  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic7  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic8  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic9  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic10  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic11  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic12  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic13  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic14  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic15  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic16  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic17  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic18  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic19  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic20  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic21  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic22  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic23  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic24  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic25  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic26  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic27  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic28  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic29  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic30  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic31  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic32  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic33  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic34  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic35  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic36  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic37  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic38  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic39  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic40  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic41  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic42  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic43  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic44  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic45  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic46  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic47  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic48  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic49  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: voltage_armonic50  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic1  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic2  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic3  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic4  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic5  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic6  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic7  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic8  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic9  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic10  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic11  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic12  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic13  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic14  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic15  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic16  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic17  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic18  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic19  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic20  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic21  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic22  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic23  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic24  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic25  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic26  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic27  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic28  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic29  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic30  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic31  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic32  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic33  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic34  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic35  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic36  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic37  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic38  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic39  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic40  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic41  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic42  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic43  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic44  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic45  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic46  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic47  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic48  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic49  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: current_armonic50  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic1  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic2  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic3  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic4  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic5  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic6  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic7  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic8  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic9  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic10  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic11  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic12  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic13  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic14  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic15  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic16  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic17  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic18  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic19  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic20  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic21  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic22  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic23  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic24  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic25  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic26  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic27  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic28  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic29  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic30  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic31  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic32  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic33  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic34  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic35  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic36  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic37  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic38  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic39  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic40  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic41  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic42  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic43  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic44  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic45  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic46  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic47  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic48  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic49  
+    type:  
+    upper_limit: 100
+    lower_limit: 0
+  - physical_quantity: power_armonic50  
+    type:  
+    upper_limit: 100
+    lower_limit: 0

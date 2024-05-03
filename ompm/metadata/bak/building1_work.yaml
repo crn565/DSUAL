@@ -1,0 +1,63 @@
+instance: 1   # this is the first building in the dataset
+original_name: house_1   # original name from REDD dataset
+elec_meters:
+  1: &OZM
+    site_meter: true
+    device_model: OZM
+  2: &OZM2
+    device_model: OZM2
+    submeter_of: 2 
+  3: &OZM3
+    device_model: OZM3
+    submeter_of: 3 
+  4: &ZM4
+    device_model: OZM4
+    submeter_of: 4 
+  5: &OZM5
+    device_model: OZM5
+    submeter_of: 5 
+  6: &OZM6
+    device_model: OZM6
+    submeter_of: 6 
+  7: &OZM7
+    device_model: OZM7
+    submeter_of: 2 
+  
+appliances:
+- original_name: boiler
+  type: boiler
+  #floor: 0
+  instance: 1
+  meters: [2]
+
+- original_name: fan
+  type: fan
+  instance: 1
+  #floor: 1
+  meters: [3]
+
+- original_name: freezer
+  type: freezer
+  instance: 1
+  #floor: 1
+  meters: [4]
+
+- original_name: television
+  type: television
+  instance: 1
+  #floor: 1
+  meters: [5]
+  
+- original_name: vacuum cleaner
+  type: vacuum cleaner
+  instance: 1
+  #floor: 1
+  meters: [6]
+
+- original_name: light
+  #floor: 1
+  type: light   
+  instance: 1
+  meters: [7]
+
+
