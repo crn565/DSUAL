@@ -347,7 +347,7 @@ dispondremos para los datos aportados por oZm v1 y oZm v2 de diferentes
 convertidores con todo su soporte necesario (función de conversión,
 ficheros de configuración, etc.)
 
-Como ejemplo reproducimos en ellistado el contenido para el caso de
+Como ejemplo reproducimos en el listado el contenido para el caso de
 conversor de los datos apartados por oZm v1 sin soporte de armónicos.
 
 +-----------------------------------------------------------------------+
@@ -464,7 +464,7 @@ usando para ello el fichero de etiquetas *labels.csv,* proceso que
 representamos en la siguiente figura.
 
 > ![Diagrama Descripción generada
-> automáticamente](./image/image3.jpg)
+> automáticamente](./images/image3.jpg)
 
 Obviamente, al contenido del fichero *labels.dat* dependerá de los
 electrodomésticos que hayamos conectado en el experimento en particular,
@@ -484,49 +484,15 @@ Un ejemplo del contenido de este fichero, usado para las medidas tomadas
 con oZm v1 tanto con soporte o no de armónicos, se puede observar en la
 Tabla.
 
-  -----------------------------------------------------------------------
-  1 mains
-  -----------------------------------------------------------------------
-  2 fan
-
-  3 freezer
-
-  4 television
-
-  5 vacuum_cleaner
-
-  6 boiler
-  -----------------------------------------------------------------------
+![](./images/image5.png){width="1.8544258530183726in"
+height="1.3960279965004374in"}
 
 En el caso las medidas tomadas con oZm v2 tanto con soporte o no de
 armónicos, al ampliar el número de aplicativos su contenido es
 diferente, como podemos ver en siguiente tabla.
 
-  -----------------------------------------------------------------------
-  1 mains
-  -----------------------------------------------------------------------
-  2 electric_furnace
-
-  3 microwave
-
-  4 television
-
-  5 kettle
-
-  6 vacuum_cleaner
-
-  7 electric_space_heater
-
-  8 electric_shower_heater
-
-  9 fan
-
-  10 fridge
-
-  11 freezer
-  -----------------------------------------------------------------------
-
-  : .
+![](./images/image6.png){width="2.448257874015748in"
+height="2.333659230096238in"}
 
 En cuanto a los ficheros de datos (*1.csv, 2.csv, 3.csv, 4.csc, 5.csv,
 6.csv*), salvando la primera fila que corresponde a los identificativos
@@ -550,14 +516,8 @@ específicas para el resto de datasets)*,* pasándole la ruta de los
 metadatos y el nuevo nombre del fichero del conjunto de datos que se
 generará en formato *H5*, como podemos hacer con el Listado en *Python*.
 
-+-----------------------------------------------------------------------+
-| 1.  from nilmtk.dataset_converters import convert_ualm                |
-|                                                                       |
-| 2.  convert_ualm(\'./data/oZm2/\', \'dsual.h5\')                      |
-+=======================================================================+
-+-----------------------------------------------------------------------+
-
-: .
+![](./images/image7.png){width="3.5317432195975504in"
+height="0.39588910761154855in"}
 
 Es asimismo importante mencionar para que, tanto los ficheros de
 metadatos como el código en *Python* de cada convertidor sean procesados
@@ -565,57 +525,16 @@ por el toolkit, debemos añadir nuevas líneas en el fichero \_\_init\_\_
 con los 5 nuevos conversores soportados, tal y como podemos apreciar en
 la imagen.
 
-![](./images/image5.png)
+![](./images/image8.png){width="4.0in"
+height="6.29376312335958in"}
 
 En cuanto al fichero "\_\_init\_\_\_", este decisivo fichero en formato
 yaml lo localizaremos en la ruta:
 *"/Users/Usuariox/python3/envs/NILMTK-env/Lib/site-packages/NILMTK/data-converters/\_\_init\_\_",*
 y su contenido los podemos ver a continuación.
 
-+-----------------------------------------------------------------------+
-| 1.  from .**redd**.**convert_redd** import **convert_redd**           |
-|                                                                       |
-| 2.  from .**dred**.**convert_dred** import **convert_dred**           |
-|                                                                       |
-| 3.  from .**ukdale**.**convert_ukdale** import **convert_ukdale**     |
-|                                                                       |
-| 4.  from .**ampds**.**convert_ampds** import **convert_ampds**        |
-|                                                                       |
-| 5.  from .**combed**.**convert_combed** import **convert_combed**     |
-|                                                                       |
-| 6.  from .**eco**.**convert_eco** import **convert_eco**              |
-|                                                                       |
-| 7.  *#from .dataport.download_dataport import download_dataport*      |
-|                                                                       |
-| 8.  from .**greend**.**convert_greend** import **convert_greend**     |
-|                                                                       |
-| 9.  from .**hes**.**convert_hes** import **convert_hes**              |
-|                                                                       |
-| 10. from .**refit**.**convert_refit** import **convert_refit**        |
-|                                                                       |
-| 11. from .**iawe**.**convert_iawe** import **convert_iawe**           |
-|                                                                       |
-| 12. from .**smart**.**convert_smart** import **convert_smart**        |
-|                                                                       |
-| 13. from .**caxe**.**convert_caxe** import **convert_caxe**           |
-|                                                                       |
-| 14. from .**ideal**.**convert_ideal** import **convert_ideal**        |
-|                                                                       |
-| 15. from .**ualm5**.**convert_ualm** import **convert_ualm**          |
-|                                                                       |
-| 16. from .**ualm5t**.**convert_ualmt** import **convert_ualmt**       |
-|                                                                       |
-| 17. from .**ualm10**.**convert_ualm10** import **convert_ualm10**     |
-|                                                                       |
-| 18. from .**ualmt10H**.**convert_ualmt10H** import                    |
-|     **convert_ualmt10H**                                              |
-|                                                                       |
-| 19. from ompm.**convert_ualm2** import **convert_ualm2**              |
-+=======================================================================+
-+-----------------------------------------------------------------------+
-
-: Fig. 62 - Esquema de estructura de ficheros para gestión de
-conversores en NILMTK.
+![](./images/image9.png){width="4.750662729658792in"
+height="2.771220472440945in"}
 
 En este fichero, es de destacar las últimas nuevas líneas de código,
 donde contemplamos el soporte de los nuevos convertidores:
