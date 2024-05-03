@@ -67,7 +67,8 @@ potencia, la potencia reactiva, la frecuencia, el voltaje, el factor de
 potencia, los datos de corriente y los armónicos hasta el orden de 50
 para cada dispositivo, como se muestra en la imagen.
 
-![](./images/image1.jpg)
+![](./images/image1.jpg){width="5.595879265091863in"
+height="4.017341426071741in"}
 
 ### UALM2
 
@@ -264,8 +265,6 @@ están conectados.
 +=======================================================================+
 +-----------------------------------------------------------------------+
 
-: Listado 15 - Contenido del fichero dataset. yaml.
-
 Como deducimos en el listado anterior tenemos 6 medidores (todos oZm
 v1), siendo el número uno el principal desde el punto de vista
 conceptual (es decir, el general o *Main*), y el resto, contadores
@@ -283,42 +282,8 @@ metadatos que pueden ser de interés para el investigador, como lo es la
 fecha, la localización geográfica o simplemente una vía de contacto,
 metadatos que obviamente asociaremos también al conjunto de datos.
 
-+-----------------------------------------------------------------------+
-| name: DSUAL                                                           |
-|                                                                       |
-| long_name: The Reference Energy Disaggregation Data set of the        |
-| Almeria University                                                    |
-|                                                                       |
-| creators: crn56                                                       |
-|                                                                       |
-| publication_date: 2021                                                |
-|                                                                       |
-| institution:                                                          |
-|                                                                       |
-| contact: crn565@inlumine.ual.es                                       |
-|                                                                       |
-| description:                                                          |
-|                                                                       |
-| subject: Disaggregated power demand from domestic buildings.          |
-|                                                                       |
-| number_of_buildings: 1                                                |
-|                                                                       |
-| timezone: Europe/Berlin *#UTC \# UTC*                                 |
-|                                                                       |
-| geo_location:                                                         |
-|                                                                       |
-| locality: Almeria *\# village, town, city or state*                   |
-|                                                                       |
-| country: ES *\# standard two-letter country code defined by ISO       |
-| 3166-1 alpha-2*                                                       |
-|                                                                       |
-| latitude: 36.83814 *\# MIT\'s coordindates*                           |
-|                                                                       |
-| longitude: -2.45974                                                   |
-|                                                                       |
-| related_documents:                                                    |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+![](./images/image3.png){width="5.396586832895888in"
+height="2.1044608486439196in"}
 
 Es fácil deducir que este fichero es idéntico al del conversor con
 soporte con armónicos dado que parten de las mismas medidas, siendo
@@ -350,80 +315,8 @@ ficheros de configuración, etc.)
 Como ejemplo reproducimos en el listado el contenido para el caso de
 conversor de los datos apartados por oZm v1 sin soporte de armónicos.
 
-+-----------------------------------------------------------------------+
-| OZM:                                                                  |
-|                                                                       |
-| model: OZM                                                            |
-|                                                                       |
-| manufacturer: ual                                                     |
-|                                                                       |
-| manufacturer_url: https://openzmeter.com/                             |
-|                                                                       |
-| description: Multifunction meter for feeders                          |
-|                                                                       |
-| sample_period: 60 *\# the interval between samples. In seconds.*      |
-|                                                                       |
-| max_sample_period: 300                                                |
-|                                                                       |
-| measurements:                                                         |
-|                                                                       |
-| \- physical_quantity: power *\# power, voltage, energy, current?*     |
-|                                                                       |
-| type: active *\# active (real power), reactive or apparent?*          |
-|                                                                       |
-| upper_limit: 10000                                                    |
-|                                                                       |
-| lower_limit: 0                                                        |
-|                                                                       |
-| \- physical_quantity: power                                           |
-|                                                                       |
-| type: apparent                                                        |
-|                                                                       |
-| upper_limit: 10000                                                    |
-|                                                                       |
-| lower_limit: 0                                                        |
-|                                                                       |
-| \- physical_quantity: power                                           |
-|                                                                       |
-| type: reactive                                                        |
-|                                                                       |
-| upper_limit: 10000                                                    |
-|                                                                       |
-| lower_limit: 0                                                        |
-|                                                                       |
-| \- physical_quantity: frequency                                       |
-|                                                                       |
-| type:                                                                 |
-|                                                                       |
-| upper_limit: 70                                                       |
-|                                                                       |
-| lower_limit: 0                                                        |
-|                                                                       |
-| \- physical_quantity: voltage                                         |
-|                                                                       |
-| type:                                                                 |
-|                                                                       |
-| upper_limit: 270                                                      |
-|                                                                       |
-| lower_limit: 0                                                        |
-|                                                                       |
-| \- physical_quantity: pf                                              |
-|                                                                       |
-| type:                                                                 |
-|                                                                       |
-| upper_limit: 1                                                        |
-|                                                                       |
-| lower_limit: 0                                                        |
-|                                                                       |
-| \- physical_quantity: current                                         |
-|                                                                       |
-| type:                                                                 |
-|                                                                       |
-| upper_limit: 100                                                      |
-|                                                                       |
-| lower_limit: 0                                                        |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+![](./images/image4.png){width="4.427701224846894in"
+height="4.7402449693788276in"}
 
 Es fácil deducir que este fichero será idéntico al usado en el conversor
 para capturar los datos de oZm v2 sin armónicos. Además de forma
@@ -464,7 +357,8 @@ usando para ello el fichero de etiquetas *labels.csv,* proceso que
 representamos en la siguiente figura.
 
 > ![Diagrama Descripción generada
-> automáticamente](./images/image3.jpg)
+> automáticamente](./images/image5.jpg){width="5.076215004374453in"
+> height="3.4395603674540682in"}
 
 Obviamente, al contenido del fichero *labels.dat* dependerá de los
 electrodomésticos que hayamos conectado en el experimento en particular,
@@ -478,20 +372,20 @@ es muy similar a la vista con los datos de oZm v1, lógicamente con los
 cambios oportunos para soportar el doble de aplicativos, tal y como
 podemos ver en el siguiente esquema en la imagen.
 
-![](./images/image4.png)
+![](./images/image6.png)
 
 Un ejemplo del contenido de este fichero, usado para las medidas tomadas
 con oZm v1 tanto con soporte o no de armónicos, se puede observar en la
 Tabla.
 
-![](./images/image5.png){width="1.8544258530183726in"
+![](./images/image7.png){width="1.8544258530183726in"
 height="1.3960279965004374in"}
 
 En el caso las medidas tomadas con oZm v2 tanto con soporte o no de
 armónicos, al ampliar el número de aplicativos su contenido es
 diferente, como podemos ver en siguiente tabla.
 
-![](./images/image6.png){width="2.448257874015748in"
+![](./images/image8.png){width="2.448257874015748in"
 height="2.333659230096238in"}
 
 En cuanto a los ficheros de datos (*1.csv, 2.csv, 3.csv, 4.csc, 5.csv,
@@ -516,7 +410,7 @@ específicas para el resto de datasets)*,* pasándole la ruta de los
 metadatos y el nuevo nombre del fichero del conjunto de datos que se
 generará en formato *H5*, como podemos hacer con el Listado en *Python*.
 
-![](./images/image7.png){width="3.5317432195975504in"
+![](./images/image9.png){width="3.5317432195975504in"
 height="0.39588910761154855in"}
 
 Es asimismo importante mencionar para que, tanto los ficheros de
@@ -525,7 +419,7 @@ por el toolkit, debemos añadir nuevas líneas en el fichero \_\_init\_\_
 con los 5 nuevos conversores soportados, tal y como podemos apreciar en
 la imagen.
 
-![](./images/image8.png){width="4.0in"
+![](./images/image10.png){width="4.0in"
 height="6.29376312335958in"}
 
 En cuanto al fichero "\_\_init\_\_\_", este decisivo fichero en formato
@@ -533,7 +427,7 @@ yaml lo localizaremos en la ruta:
 *"/Users/Usuariox/python3/envs/NILMTK-env/Lib/site-packages/NILMTK/data-converters/\_\_init\_\_",*
 y su contenido los podemos ver a continuación.
 
-![](./images/image9.png){width="4.750662729658792in"
+![](./images/image11.png){width="4.750662729658792in"
 height="2.771220472440945in"}
 
 En este fichero, es de destacar las últimas nuevas líneas de código,
