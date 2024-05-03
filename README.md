@@ -42,6 +42,13 @@ eléctricos a alta frecuencia (15625Hz) como frecuencia, corriente,
 potencia activa, factor de potencia, potencia aparente y potencia
 reactiva, entre otras medidas.
 
+-DSUALM se puede descargar en: 
+https://github.com/crn565/DSUAL_without-armonics/blob/main/dsual.h5
+
+-DSUALMH se puede descargar commprimido en dos partes:
+https://github.com/crn565/DSUALMH_OZM/blob/main/dsualmh.part1.rar
+https://github.com/crn565/DSUALMH_OZM/blob/main/dsualmh.part2.rar
+
 ### DSUALM10 y DSUALM10H
 
 En junio de 2023, se desarrolló DSUALM10H (Dataset de la Universidad de
@@ -66,6 +73,8 @@ utilizaron los canales restantes para registrar la marca de tiempo, la
 potencia, la potencia reactiva, la frecuencia, el voltaje, el factor de
 potencia, los datos de corriente y los armónicos hasta el orden de 50
 para cada dispositivo, como se muestra en la imagen.
+
+
 
 ![](./images/image1.jpg)
 
