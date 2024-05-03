@@ -43,7 +43,7 @@ potencia activa, factor de potencia, potencia aparente y potencia
 reactiva, entre otras medidas.
 
 
-# DESCARGAS DE LOS DATASETS 
+### DESCARGAS DE LOS DATASETS 
 -DSUALM se puede descargar desde el repositorio (https://github.com/crn565/DSUAL_without-armonics) en: 
 https://github.com/crn565/DSUAL_without-armonics/blob/main/dsual.h5
 
@@ -81,7 +81,7 @@ para cada dispositivo, como se muestra en la imagen.
 ![](./images/image1.jpg)
 
 
-# DESCARGAS DE LOS DATASETS 
+### DESCARGAS DE LOS DATASETS 
 
 
 -DSUALM10 se puede descargar desde el repositorio (https://github.com/crn565/10_APLICATIVOS_SIN_ARMONICOS)en: 
@@ -106,7 +106,7 @@ seleccionaron por su bajo consumo (Freidora, Lámpara LED, Lámpara
 Incandescente, Ordenador Portátil, Ventilador).
 
 
-# DESCARGAS DEL DATASET 
+### DESCARGAS DEL DATASET 
 
 
 -UALM2 se puede descargar desde el repositorio (https://github.com/crn565/OMPM) en:
