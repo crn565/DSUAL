@@ -67,7 +67,7 @@ potencia, la potencia reactiva, la frecuencia, el voltaje, el factor de
 potencia, los datos de corriente y los armónicos hasta el orden de 50
 para cada dispositivo, como se muestra en Fig. 51.
 
-![](./imagenes/media/image1.jpg){width="5.595879265091863in"
+![](./images/image1.jpg){width="5.595879265091863in"
 height="4.017341426071741in"}
 
 ### UALM2
