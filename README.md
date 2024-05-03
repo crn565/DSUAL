@@ -42,10 +42,12 @@ eléctricos a alta frecuencia (15625Hz) como frecuencia, corriente,
 potencia activa, factor de potencia, potencia aparente y potencia
 reactiva, entre otras medidas.
 
--DSUALM se puede descargar en: 
+
+# DESCARGAS DE LOS DATASETS 
+-DSUALM se puede descargar desde el repositorio (https://github.com/crn565/DSUAL_without-armonics) en: 
 https://github.com/crn565/DSUAL_without-armonics/blob/main/dsual.h5
 
--DSUALMH se puede descargar commprimido en dos partes:
+-DSUALMH se puede descargar commprimido desde el repositorio (https://github.com/crn565/DSUALMH_OZM) en dos partes:
 https://github.com/crn565/DSUALMH_OZM/blob/main/dsualmh.part1.rar
 https://github.com/crn565/DSUALMH_OZM/blob/main/dsualmh.part2.rar
 
@@ -78,6 +80,20 @@ para cada dispositivo, como se muestra en la imagen.
 
 ![](./images/image1.jpg)
 
+
+# DESCARGAS DE LOS DATASETS 
+
+
+-DSUALM10 se puede descargar desde el repositorio (https://github.com/crn565/10_APLICATIVOS_SIN_ARMONICOS)en: 
+https://github.com/crn565/10_APLICATIVOS_SIN_ARMONICOS/blob/main/dsual.h5
+
+-DSUALM10H se puede descargar commprimido en cuatro partes desde el repositorio (https://github.com/crn565/DSUALM10H_OZM):
+https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.001
+https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.002
+https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.003
+https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.004
+
+
 ### UALM2
 
 OMPM10 (Open Multi Power Meter), se desarrolló en 2023 a partir de
@@ -88,6 +104,13 @@ funcionando en un bus RS485. Los 6 módulos de medición están asociados
 respectivamente al contador principal y a los cinco aparatos que se
 seleccionaron por su bajo consumo (Freidora, Lámpara LED, Lámpara
 Incandescente, Ordenador Portátil, Ventilador).
+
+
+# DESCARGAS DEL DATASET 
+
+
+-UALM2 se puede descargar desde el repositorio (https://github.com/crn565/OMPM) en:
+https://github.com/crn565/OMPM/blob/main/ualm2.h5
 
 # NUEVOS CONVERSORES
 
