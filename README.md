@@ -1,5 +1,8 @@
+#
+
 # CONJUNTO DE DATASETS APTOS PARA EL NILM DE LA UNIVERSIDAD DE ALMERIA
 
+#
 En este repositorio presentamos cinco nuevos conjuntos de datos de
 medidas eléctricas incluyendo el agregado de estas en el formato H5
 usado en la herramienta NILMTK.
@@ -111,6 +114,9 @@ Incandescente, Ordenador Portátil, Ventilador).
 
 -UALM2 se puede descargar desde el repositorio (https://github.com/crn565/OMPM) en:
 https://github.com/crn565/OMPM/blob/main/ualm2.h5
+
+
+#
 
 # NUEVOS CONVERSORES
 
