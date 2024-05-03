@@ -67,8 +67,7 @@ potencia, la potencia reactiva, la frecuencia, el voltaje, el factor de
 potencia, los datos de corriente y los armónicos hasta el orden de 50
 para cada dispositivo, como se muestra en la imagen.
 
-![](./images/image1.jpg){width="5.595879265091863in"
-height="4.017341426071741in"}
+![](./images/image1.jpg)
 
 ### UALM2
 
@@ -168,102 +167,7 @@ donde se configuran en este caso los 5 dispositivos más el agregado
 (todos del tipo oZm v1), y el nombre de los aparatos eléctricos al que
 están conectados.
 
-+-----------------------------------------------------------------------+
-| instance: 1 *\# this is the first building in the dataset*            |
-|                                                                       |
-| original_name: house_1 *\# original name from REDD dataset*           |
-|                                                                       |
-| elec_meters:                                                          |
-|                                                                       |
-| 1: &**OZM**                                                           |
-|                                                                       |
-| site_meter: true                                                      |
-|                                                                       |
-| device_model: OZM                                                     |
-|                                                                       |
-| 2: &**OZM2**                                                          |
-|                                                                       |
-| device_model: OZM                                                     |
-|                                                                       |
-| submeter_of: 1                                                        |
-|                                                                       |
-| 3: &**OZM3**                                                          |
-|                                                                       |
-| device_model: OZM                                                     |
-|                                                                       |
-| submeter_of: 1                                                        |
-|                                                                       |
-| 4: &**OZM4**                                                          |
-|                                                                       |
-| device_model: OZM                                                     |
-|                                                                       |
-| submeter_of: 1                                                        |
-|                                                                       |
-| 5: &**OZM5**                                                          |
-|                                                                       |
-| device_model: OZM                                                     |
-|                                                                       |
-| submeter_of: 1                                                        |
-|                                                                       |
-| 6: &**OZM6**                                                          |
-|                                                                       |
-| device_model: OZM                                                     |
-|                                                                       |
-| submeter_of: 1                                                        |
-|                                                                       |
-| appliances:                                                           |
-|                                                                       |
-| \- original_name: fan                                                 |
-|                                                                       |
-| type: fan                                                             |
-|                                                                       |
-| *#floor: 0*                                                           |
-|                                                                       |
-| instance: 1                                                           |
-|                                                                       |
-| meters: \[2\]                                                         |
-|                                                                       |
-| \- original_name: freezer                                             |
-|                                                                       |
-| type: freezer                                                         |
-|                                                                       |
-| instance: 1                                                           |
-|                                                                       |
-| *#floor: 1*                                                           |
-|                                                                       |
-| meters: \[3\]                                                         |
-|                                                                       |
-| \- original_name: television                                          |
-|                                                                       |
-| type: television                                                      |
-|                                                                       |
-| instance: 1                                                           |
-|                                                                       |
-| *#floor: 1*                                                           |
-|                                                                       |
-| meters: \[4\]                                                         |
-|                                                                       |
-| \- original_name: vacuum cleaner                                      |
-|                                                                       |
-| type: vacuum cleaner                                                  |
-|                                                                       |
-| instance: 1                                                           |
-|                                                                       |
-| *#floor: 1*                                                           |
-|                                                                       |
-| meters: \[5\]                                                         |
-|                                                                       |
-| \- original_name: boiler                                              |
-|                                                                       |
-| type: boiler                                                          |
-|                                                                       |
-| instance: 1                                                           |
-|                                                                       |
-| *#floor: 1*                                                           |
-|                                                                       |
-| meters: \[6\]                                                         |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+![](./images/image3.png)
 
 Como deducimos en el listado anterior tenemos 6 medidores (todos oZm
 v1), siendo el número uno el principal desde el punto de vista
@@ -282,8 +186,7 @@ metadatos que pueden ser de interés para el investigador, como lo es la
 fecha, la localización geográfica o simplemente una vía de contacto,
 metadatos que obviamente asociaremos también al conjunto de datos.
 
-![](./images/image3.png){width="5.396586832895888in"
-height="2.1044608486439196in"}
+![](./images/image4.png)
 
 Es fácil deducir que este fichero es idéntico al del conversor con
 soporte con armónicos dado que parten de las mismas medidas, siendo
@@ -315,8 +218,7 @@ ficheros de configuración, etc.)
 Como ejemplo reproducimos en el listado el contenido para el caso de
 conversor de los datos apartados por oZm v1 sin soporte de armónicos.
 
-![](./images/image4.png){width="4.427701224846894in"
-height="4.7402449693788276in"}
+![](./images/image5.png)
 
 Es fácil deducir que este fichero será idéntico al usado en el conversor
 para capturar los datos de oZm v2 sin armónicos. Además de forma
@@ -356,9 +258,7 @@ datos de medidas localizados en la carpeta de entrada "/*electricity/",*
 usando para ello el fichero de etiquetas *labels.csv,* proceso que
 representamos en la siguiente figura.
 
-> ![Diagrama Descripción generada
-> automáticamente](./images/image5.jpg){width="5.076215004374453in"
-> height="3.4395603674540682in"}
+> [](./images/image6.jpg)
 
 Obviamente, al contenido del fichero *labels.dat* dependerá de los
 electrodomésticos que hayamos conectado en el experimento en particular,
@@ -372,21 +272,19 @@ es muy similar a la vista con los datos de oZm v1, lógicamente con los
 cambios oportunos para soportar el doble de aplicativos, tal y como
 podemos ver en el siguiente esquema en la imagen.
 
-![](./images/image6.png)
+![](./images/image7.png)
 
 Un ejemplo del contenido de este fichero, usado para las medidas tomadas
 con oZm v1 tanto con soporte o no de armónicos, se puede observar en la
 Tabla.
 
-![](./images/image7.png){width="1.8544258530183726in"
-height="1.3960279965004374in"}
+![](./images/image8.png)
 
 En el caso las medidas tomadas con oZm v2 tanto con soporte o no de
 armónicos, al ampliar el número de aplicativos su contenido es
 diferente, como podemos ver en siguiente tabla.
 
-![](./images/image8.png){width="2.448257874015748in"
-height="2.333659230096238in"}
+![](./images/image9.png)
 
 En cuanto a los ficheros de datos (*1.csv, 2.csv, 3.csv, 4.csc, 5.csv,
 6.csv*), salvando la primera fila que corresponde a los identificativos
@@ -410,8 +308,7 @@ específicas para el resto de datasets)*,* pasándole la ruta de los
 metadatos y el nuevo nombre del fichero del conjunto de datos que se
 generará en formato *H5*, como podemos hacer con el Listado en *Python*.
 
-![](./images/image9.png){width="3.5317432195975504in"
-height="0.39588910761154855in"}
+![](./images/image10.png)
 
 Es asimismo importante mencionar para que, tanto los ficheros de
 metadatos como el código en *Python* de cada convertidor sean procesados
@@ -419,16 +316,14 @@ por el toolkit, debemos añadir nuevas líneas en el fichero \_\_init\_\_
 con los 5 nuevos conversores soportados, tal y como podemos apreciar en
 la imagen.
 
-![](./images/image10.png){width="4.0in"
-height="6.29376312335958in"}
+![](./images/image11.png)
 
 En cuanto al fichero "\_\_init\_\_\_", este decisivo fichero en formato
 yaml lo localizaremos en la ruta:
 *"/Users/Usuariox/python3/envs/NILMTK-env/Lib/site-packages/NILMTK/data-converters/\_\_init\_\_",*
 y su contenido los podemos ver a continuación.
 
-![](./images/image11.png){width="4.750662729658792in"
-height="2.771220472440945in"}
+![](./images/image12.png)
 
 En este fichero, es de destacar las últimas nuevas líneas de código,
 donde contemplamos el soporte de los nuevos convertidores:
