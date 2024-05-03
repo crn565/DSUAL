@@ -28,7 +28,7 @@ Los nuevos conjuntos de datos son los siguientes:
 Describimos a continuación más en detalle la composición de estos
 conjuntos de datos.
 
-### DSUALM y DSUALMH
+## DSUALM y DSUALMH
 
 En febrero de 2022, se desarrolló el nuevo conjunto de datos DSUALM
 (Data Set de la Universidad de Almería), el cual se creó a partir de las
@@ -51,7 +51,7 @@ https://github.com/crn565/DSUAL_without-armonics/blob/main/dsual.h5
 https://github.com/crn565/DSUALMH_OZM/blob/main/dsualmh.part1.rar
 https://github.com/crn565/DSUALMH_OZM/blob/main/dsualmh.part2.rar
 
-### DSUALM10 y DSUALM10H
+## DSUALM10 y DSUALM10H
 
 En junio de 2023, se desarrolló DSUALM10H (Dataset de la Universidad de
 Almería de 10 electrodomésticos con armónicos), el cual como su propio
@@ -94,7 +94,7 @@ https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.003
 https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.004
 
 
-### UALM2
+## UALM2
 
 OMPM10 (Open Multi Power Meter), se desarrolló en 2023 a partir de
 mediciones de 6 canales (5+añadidos) utilizando un novedoso sistema
