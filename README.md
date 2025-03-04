@@ -24,7 +24,7 @@ The composition of these datasets is described in more detail below.
 En febrero de 2022, se desarrolló el nuevo conjunto de datos DSUALM (Data Set de la Universidad de Almería), que se creó a partir de las mediciones de siete medidores OpenZmeter v1, cuyas medidas se asocian al agregado y a seis aplicaciones. Este contador de electricidad y analizador de calidad de energía (OZM), empleado para crear este conjunto de datos, ha sido desarrollado en colaboración con las universidades de Granada y Almería, y funciona según los principios de código abierto y hardware abierto. Mide parámetros eléctricos a alta frecuencia (15 625 Hz), como frecuencia, corriente, potencia activa, factor de potencia, potencia aparente y potencia reactiva, entre otros.
 
 
-### DESCARGAS DE LOS DATASETS 
+### DOWNLOADS OF THE DATASETS### 
 -DSUALM can be downloaded from the repository (https://github.com/crn565/DSUAL_without-armonics) at:
 https://github.com/crn565/DSUAL_without-armonics/blob/main/dsual.h5
 
@@ -45,7 +45,8 @@ The primary IP X.X.X.X.100 meter (channel 1) was used for the aggregate measurem
 ![](./images/image1.jpg)
 
 
-### DESCARGAS DE LOS DATASETS 
+### DOWNLOADS OF THE DATASETS
+
 
 
 -DSUALM10 can be downloaded from the repository (https://github.com/crn565/10_APLICATIVOS_SIN_ARMONICOS):
@@ -63,7 +64,7 @@ https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.004
 OMPM10 (Open Multi Power Meter), was developed in 2023 from 6-channel measurements (5+added) using a novel system based on a single ESP32 microcontroller, a microSD card reader, an I2C display and 6 PZEM004 measurement modules, all operating on an RS485 bus. The 6 measurement modules are associated respectively to the main meter and to the five devices that were selected for their low power consumption (Fryer, LED Lamp, Incandescent Lamp, Laptop Computer, Fan).
 
 
-### DESCARGAS DEL DATASET 
+### DATASET DOWNLOADS### 
 
 
 -UALM2 can be downloaded from the repository (https://github.com/crn565/OMPM) at:
@@ -72,7 +73,7 @@ https://github.com/crn565/OMPM/blob/main/ualm2.h5
 
 #
 
-# NEW CONVERTERS# NEW CONVERTERS
+# NEW CONVERTERS# 
 
 # 
 
@@ -129,74 +130,71 @@ If we visualise the content of the *dataset.yaml* file, in the list in *yaml* fo
 
 ![](./images/image4.png)
 
-Es fácil deducir que este fichero es idéntico al del conversor con soporte con armónicos dado que parten de las mismas medidas, siendo además muy similar al usado con las medidas de oZm v2 (excepto en apartado referente a la fecha de publicación).
+It is easy to deduce that this file is identical to that of the converter with harmonic support, given that they start from the same measurements, being also very similar to the one used with the oZm v2 measurements (except for the section referring to the publication date).
 
-Por último, nos queda también en formato *yaml*, el fichero de medidas *meter_devices.yaml*. En éste hay diferencias acusadas tanto en las medidas obtenidas con oZm v1 o oZm v2 como en el soporte de armónicos, porque si bien comparten el número de medidas fundamentales soportadas por los diferentes oZm's (como son la potencia activa, aparente y reactiva, la frecuencia, el voltaje, la corriente y el factor de potencia) en los conjuntos de datos con soporte de armónicos añadiremos además 150 medidas correspondientes a los armónicos hasta el orden 50 de la tensión, corriente y potencia.
+Finally, we also have in *yaml* format, the measurement file *meter_devices.yaml*. In this file there are marked differences both in the measurements obtained with oZm v1 or oZm v2 and in the harmonics support, because although they share the number of fundamental measurements supported by the different oZm's (such as active, apparent and reactive power, frequency, voltage, current and power factor) in the data sets with harmonics support we will also add 150 measurements corresponding to the harmonics up to order 50 of the voltage, current and power.It is easy to deduce that this file is identical to that of the converter with harmonic support, given that they start from the same measurements, being also very similar to the one used with the oZm v2 measurements (except for the section referring to the publication date).
 
-En este caso, al ser medidas idénticas las tomadas con oZm v1 y oZm v2, este fichero asociado, dado que está asociado al tipo de contador, este será idéntico en ambas versiones tan solo defiriendo en el soporte de armónicos al albergar estos ultimo un mayor número de medidas. Por tanto, es relevante destacar en este punto, como el fichero de medidas debe estar íntimamente relacionado con el convertidor de los ficheros de datos, razón por la cual, en esta Tesis, dado que buscamos evaluar la posible mejora del procesamiento de los armónicos en NILMTK,dispondremos para los datos aportados por oZm v1 y oZm v2 de diferentes  convertidores con todo su soporte necesario (función de conversión, ficheros de configuración, etc.)
 
-Como ejemplo reproducimos en el listado el contenido para el caso de conversor de los datos apartados por oZm v1 sin soporte de armónicos.
+In this case, as the measurements taken with oZm v1 and oZm v2 are identical, this associated file, given that it is associated with the type of meter, will be identical in both versions, only differing in the harmonics support, as the latter contains a greater number of measurements. Therefore, it is important to highlight at this point how the measurement file must be closely related to the data file converter, which is why, in this Thesis, given that we are seeking to evaluate the possible improvement of harmonics processing in NILMTK, we will have for the data provided by oZm v1 and oZm v2 different converters with all the necessary support (conversion function, configuration files, etc.).
+
+As an example we reproduce in the list the content for the converter case of the data set aside by oZm v1 without harmonics support.
 
 ![](./images/image5.png)
 
-Es fácil deducir que este fichero será idéntico al usado en el conversor para capturar los datos de oZm v2 sin armónicos. Además de forma parecida en el caso de soporte con armónicos tanto para oZm v1 como oZm v2 el contenido de este fichero será aún mucho más extenso al incluir además 150 variables correspondientes a los 50 armónicos de tensión, corriente y potencia.
+It is easy to deduce that this file will be identical to the one used in the converter to capture the oZm v2 data without harmonics. In addition, similarly in the case of support with harmonics for both oZm v1 and oZm v2, the content of this file will be even more extensive as it will also include 150 variables corresponding to the 50 harmonics of voltage, current and power.
 
-**Ampliación del soporte de nuevos conversores a NILMTK**
+## Expansion of support for new converters to NILMTK## 
 
-Es necesario destacar, que como el formato original de NILMTK para el campo *timestamp* es de 10 dígitos, pero el *timestamp* arrojado por el OZM está en formato 13 dígitos (es decir, en el que se almacena hasta los milisegundos pasados desde el 1 del 1 de 1970). Es por ello que debemos realizar una adaptación especial, pues además este formato no es soportado por ningún conversor soportado por el toolkit. Es precisamente este importante cambio, en el formato de *timestamp* de 10 a 13 dígitos, uno los motivos por el que se requieren nuevos convertidores específicos para el procesamiento de las medidas arrojadas por los oZm's en sus diferentes versiones, además de otros factores secundarios (como, por ejemplo, el cambio del valor de *timezone* para nuestra ubicación de *Europe/Madrid).*
+It should be noted that the original NILMTK format for the *timestamp* field is 10 digits, but the *timestamp* returned by the OZM is in 13 digits format (i.e. it stores up to the milliseconds since the 1st of the 1st of 1970). This is why we have to make a special adaptation, as this format is not supported by any converter supported by the toolkit. It is precisely this important change, in the *timestamp* format from 10 to 13 digits, one of the reasons why new specific converters are required for the processing of the measurements given by the oZm's in their different versions, in addition to other secondary factors (such as, for example, the change of the *timezone* value for our *Europe/Madrid location).
 
-Además, respecto a los metadatos que se van a tratar en los diferentes convertidores, estos difieren, dado que algunos soportan solo la potencia (real, reactiva y aparente), el voltaje, la intensidad, la frecuencia y el factor de potencia, pero en otros además añadimos los armónicos hasta el orden 50 de la corriente, tensión y potencia.
+Furthermore, with respect to the metadata to be processed in the different converters, these differ, given that some support only power (real, reactive and apparent), voltage, current, frequency and power factor, but in others we also add harmonics up to order 50 of the current, voltage and power.
 
-Como cada fichero de medidas es obtenido en la fase anterior a partir de los ficheros de los diferentes oZm's, es necesario numerarlos del 1 al número de aplicativos máximo (6 en caso de oZm v1 y 11 en caso de oZm v2), siendo el Nº 1 el correspondiente al medidor principal y el resto
-perteneciente a los submedidores asociados a los aparatos eléctricos.
-Para ello, cada nueva función accede a todos los citados ficheros de datos de medidas localizados en la carpeta de entrada "/*electricity/",* usando para ello el fichero de etiquetas *labels.csv,* proceso que representamos en la siguiente figura.
+As each measurement file is obtained in the previous phase from the files of the different oZm's, it is necessary to number them from 1 to the maximum number of applications (6 in the case of oZm v1 and 11 in the case of oZm v2), with Nº 1 corresponding to the main meter and the rest
+belonging to the sub-meters associated with the electrical appliances.
+To do this, each new function accesses all the aforementioned measurement data files located in the input folder "/*electricity/",* using the tag file *labels.csv,* a process that is shown in the following figure.
 
 > [](./images/image6.jpg)
 
-Obviamente, al contenido del fichero *labels.dat* dependerá de los electrodomésticos que hayamos conectado en el experimento en particular, pero, en todo caso, es muy importante este fichero, ya que ubica cada fichero *csv* numerado con su aplicativo (por ejemplo, el fichero *1.csv*, que corresponde a la primera línea, corresponde a *mains*, es decir al contador principal).
+Obviously, the content of the *labels.dat* file will depend on the appliances we have connected in the particular experiment, but, in any case, it is very important, since it contains the location of each *csv* file numbered with its application (for example, the *1.csv* file, which corresponds to the first line, corresponds to *mains*, that is, to the main counter).
 
-En el caso de los datos ofrecidos por oZm v2, la estructura de ficheros es muy similar a la vista con los datos de oZm v1, lógicamente con los cambios oportunos para soportar el doble de aplicativos, tal y como podemos ver en el siguiente esquema en la imagen.
+In the case of the data offered by oZm v2, the structure of the files is very similar to the one seen with the oZm v1 data, logically, with the appropriate changes to support twice as many applications, as we can see in the following diagram.
 
 ![](./images/image7.png)
 
-Un ejemplo del contenido de este fichero, usado para las medidas tomadas con oZm v1 tanto con soporte o no de armónicos, se puede observar en la
-Tabla.
+An example of the content of this file, used for measurements taken with oZm v1 both with and without harmonics support, can be seen in Table.
 
 ![](./images/image8.png)
 
-En el caso las medidas tomadas con oZm v2 tanto con soporte o no de armónicos, al ampliar el número de aplicativos su contenido es diferente, como podemos ver en siguiente tabla.
+In the case of measurements taken with oZm v2 with or without harmonics support, the content is different when the number of applications is increased, as can be seen in the following table.
 
 ![](./images/image9.png)
 
-En cuanto a los ficheros de datos (*1.csv, 2.csv, 3.csv, 4.csc, 5.csv, 6.csv*), salvando la primera fila que corresponde a los identificativos de los campos de las medidas, el resto de filas representa una medida en un determinado instante temporal definido por su valor de *timestamp**.*
+As for the data files (*1.csv, 2.csv, 3.csv, 4.csc, 5.csv, 6.csv*), except for the first row which corresponds to the field identifiers of the measurements, the rest of the rows represent a measurement at a given time instant defined by its *timestamp** value. *  In our case, the *timestamp* value is set to the Unix Epoc format of 13 digits, unlike the conventional NILMTK format which is set to 10 digits, **this work being one of the first works related to NILMTK to adopt this format, which is much more complete.As for the data files (*1.csv, 2.csv, 3.csv, 4.csc, 5.csv, 6.csv*), except for the first row which corresponds to the field identifiers of the measurements, the rest of the rows represent a measurement at a given time instant defined by its *timestamp** value. *  
 
-En nuestro caso, el valor del *timestamp* está fijado al formato Unix Epoc de 13 dígitos, a diferencia del formato convencional de NILMTK que está fijado en 10 dígitos, **siendo este trabajo uno de los primeros trabajos relacionados con NILMTK en adoptar dicho formato, mucho más completo.**
 
-Es de destacar que los ficheros de medidas deben estar de acorde, tanto con los ficheros de metadatos (en formato *yaml*), como con los propios datos en sí mismos (en formato csv).
+It should be noted that the measurement files must be in accordance with both the metadata files (in *yaml* format) and the data itself (in csv format).
 
-Una vez ubicados los ficheros de medidas, lo primero es invocar el conversor especifico llamando a la nueva función *convert_ualm* (de modo similar se haría de forma similar con las correspondientes funciones específicas para el resto de datasets)*,* pasándole la ruta de los metadatos y el nuevo nombre del fichero del conjunto de datos que se generará en formato *H5*, como podemos hacer con el Listado en *Python*.
+Once the measurement files have been located, the first thing to do is to invoke the specific converter by calling the new function *convert_ualm* (in a similar way with the corresponding specific functions for the rest of the datasets)*,* passing it the path of the metadata and the new file name of the dataset that will be generated in *H5* format, as we can do with the *Python* Listing.
 
 ![](./images/image10.png)
 
-Es asimismo importante mencionar para que, tanto los ficheros de metadatos como el código en *Python* de cada convertidor sean procesados por el toolkit, debemos añadir nuevas líneas en el fichero \_\_init\_\_ con los 5 nuevos conversores soportados, tal y como podemos apreciar en la imagen.
+It is also important to mention that in order for both the metadata files and the *Python* code of each converter to be processed by the toolkit, we must add new lines in the \_init_file with the 5 new supported converters, as we can see in the image.
 
 ![](./images/image11.png)
 
-En cuanto al fichero "\_\_init\_\_\_", este decisivo fichero en formato yaml lo localizaremos en la ruta: *"/Users/Usuariox/python3/envs/NILMTK-env/Lib/site-packages/NILMTK/data-converters/\_\_init\_\_",* y su contenido los podemos ver a continuación.
+As for the file "\_init_init\_", this decisive file in yaml format will be located in the path: *"/Users/Usuariox/python3/envs/NILMTK-env/Lib/site-packages/NILMTK/data-converters/\_\_init\_\_",* and its contents can be seen below.
 
 ![](./images/image12.png)
 
-En este fichero, es de destacar las últimas nuevas líneas de código,donde contemplamos el soporte de los nuevos convertidores:
+In this file, it is worth noting the last new lines of code, where we contemplate the support of the new converters:
 
--   *convert_ualm* que usaremos para el procesamiento de los datos     provenientes de varios oZm v1 sin registrar armónicos con 5     aplicativos (Línea 15).
+-   We will use *convert_ualm* for the processing of the data coming from several oZm v1 without recording harmonics with 5 applications (Line 15).
 
--   *convert_ualmt,* que contempla 5 aplicativos, pero además de los     campos mencionados, los armónicos hasta el orden 50 de la tensión,
-    la corriente y la potencia (Línea 16)
+-   *convert_ualmt,* which includes 5 applications, but in addition to the fields mentioned above, harmonics up to order 50 of voltage, current and power (Line 16).*convert_ualmt,* which includes 5 applications, but in addition to the fields mentioned above, harmonics up to order 50 of voltage,
+ current and power (Line 16).
 
--   *convert_ualm10* que usaremos para el procesamiento de los datos    provenientes de varios oZm v2 sin registrar armónicos con 10
-    aplicativos (Línea 17)
+-   *convert_ualm10* which we will use for the processing of the data coming from several oZm v2 without recording harmonics with 10  applications (Line 17). *convert_ualm10* which we will use for the processing of the data coming from several oZm v2 without recording harmonics with 10  applications (Line 17).
 
--   *convert_ualm10H,* que contempla 10 aplicativos, pero además de los     campos mencionados, los armónicos hasta el orden 50 de la tensión,
-    la corriente y la potencia (Línea 18)
+-   *convert_ualm10H,* which includes 10 applications, but in addition to the fields mentioned above, harmonics up to order 50 of voltage, current and power (Line 18).
 
--   *convert_ualm2* para procesar las medidas del nuevo hardware      OMPM(Línea 19).
+-   *convert_ualm2* to process the measurements of the new OMPM hardware (Line 19).
