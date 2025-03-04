@@ -1,6 +1,6 @@
 #
 
-# SET OF DATASETS SUITABLE FOR NILM AT THE UNIVERSITY OF ALMERIA# SET OF DATASETS SUITABLE FOR NILM AT THE UNIVERSITY OF ALMERIA
+# SET OF DATASETS SUITABLE FOR NILM AT THE UNIVERSITY OF ALMERIA# 
 
 #
 In this repository we present five new datasets of electrical measurements including the electrical measurements including the aggregation of these in the H5 format used in the NILMTK format used in the NILMTK tool.
