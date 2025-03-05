@@ -24,7 +24,7 @@ The composition of these datasets is described in more detail below.
 En febrero de 2022, se desarrolló el nuevo conjunto de datos DSUALM (Data Set de la Universidad de Almería), que se creó a partir de las mediciones de siete medidores OpenZmeter v1, cuyas medidas se asocian al agregado y a seis aplicaciones. Este contador de electricidad y analizador de calidad de energía (OZM), empleado para crear este conjunto de datos, ha sido desarrollado en colaboración con las universidades de Granada y Almería, y funciona según los principios de código abierto y hardware abierto. Mide parámetros eléctricos a alta frecuencia (15 625 Hz), como frecuencia, corriente, potencia activa, factor de potencia, potencia aparente y potencia reactiva, entre otros.
 
 
-### DOWNLOADS OF THE DATASETS### 
+### DOWNLOADS OF THE DATASETS
 -DSUALM can be downloaded from the repository (https://github.com/crn565/DSUAL_without-armonics) at:
 https://github.com/crn565/DSUAL_without-armonics/blob/main/dsual.h5
 
@@ -64,7 +64,7 @@ https://github.com/crn565/DSUALM10H_OZM/blob/main/dsualmh.zip.004
 OMPM10 (Open Multi Power Meter), was developed in 2023 from 6-channel measurements (5+added) using a novel system based on a single ESP32 microcontroller, a microSD card reader, an I2C display and 6 PZEM004 measurement modules, all operating on an RS485 bus. The 6 measurement modules are associated respectively to the main meter and to the five devices that were selected for their low power consumption (Fryer, LED Lamp, Incandescent Lamp, Laptop Computer, Fan).
 
 
-### DATASET DOWNLOADS### 
+### DATASET DOWNLOADS
 
 
 -UALM2 can be downloaded from the repository (https://github.com/crn565/OMPM) at:
@@ -73,7 +73,7 @@ https://github.com/crn565/OMPM/blob/main/ualm2.h5
 
 #
 
-# NEW CONVERTERS# 
+# NEW CONVERTERS
 
 # 
 
