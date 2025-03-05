@@ -11,17 +11,17 @@ The new datasets are as follows:
 
 -   **DSUALMH**: measurements of seven OZM meters (OpenZmeter) v1, whose measurements are associated with the aggregate and 6 applications. This dataset also includes harmonics up to order 150 of voltage, current and power.
 
--   **DSUALM10**: Se han realizado mediciones con siete medidores OZM (OpenZmeter) v2, cuyas medidas se asocian al agregado y a diez aplicaciones.
+-   **DSUALM10**: Measurements have been made with seven OZM (OpenZmeter) v2 meters, whose measurements are associated with the aggregate and ten applications.
 
--   **DSUALM10H**: Se han realizado mediciones con siete medidores OZM (OpenZmeter) v2, cuyas medidas se asocian al agregado y al de diez aplicaciones. En este conjunto de datos también se incluyen los armónicos de tensión, corriente y potencia hasta el orden 150.
+-   **DSUALM10H**: Measurements have been made with seven OZM (OpenZmeter) v2 meters, whose measurements are associated with the aggregate and that of ten applications. This dataset also includes voltage, current and power harmonics up to the order 150.
 
--   **UALM2:** Mediciones de seis medidores OMPM (Open Multi Power Meter) v1, cuyas medidas se asocian al agregado y a cinco aplicaciones.
+-   **UALM2:** Measurements from six OMPM (Open Multi Power Meter) v1 meters, whose measurements are associated with the aggregate and five applications.
 
 The composition of these datasets is described in more detail below.
 
 ## DSUALM y DSUALMH
 
-En febrero de 2022, se desarrolló el nuevo conjunto de datos DSUALM (Data Set de la Universidad de Almería), que se creó a partir de las mediciones de siete medidores OpenZmeter v1, cuyas medidas se asocian al agregado y a seis aplicaciones. Este contador de electricidad y analizador de calidad de energía (OZM), empleado para crear este conjunto de datos, ha sido desarrollado en colaboración con las universidades de Granada y Almería, y funciona según los principios de código abierto y hardware abierto. Mide parámetros eléctricos a alta frecuencia (15 625 Hz), como frecuencia, corriente, potencia activa, factor de potencia, potencia aparente y potencia reactiva, entre otros.
+In February 2022, the new DSUALM (Data Set of the University of Almeria) dataset was developed, which was created from the measurements of seven OpenZmeter v1 meters, whose measurements are associated with the aggregate and six applications. This electricity meter and power quality analyser (OZM), used to create this dataset, has been developed in collaboration with the universities of Granada and Almeria, and operates according to the principles of open source and open hardware. It measures electrical parameters at high frequency (15 625 Hz), such as frequency, current, active power, power factor, apparent power and reactive power, among others.
 
 
 ### DOWNLOADS OF THE DATASETS
@@ -34,8 +34,7 @@ https://github.com/crn565/DSUALMH_OZM/blob/main/dsualmh.part2.rar
 
 ## DSUALM10 y DSUALM10H
 
-In June 2023, DSUALM10H (University of Almeria Dataset of 10 household appliances with harmonics) was developed , which as its name suggests expanded the initial version with 10 appliances. This new dataset includes 150+ electrical measurements with I, V and W transients, using the new version of the high-precision OpenZmeter v2 for 
- greater accuracy.In June 2023, DSUALM10H (University of Almeria Dataset of 10 household appliances with harmonics) was developed , which as its name suggests expanded the initial version with 10 appliances. This new dataset includes 150+ electrical measurements with I, V and W transients, using the new version of the high-precision  OpenZmeter v2 for greater accuracy.
+In June 2023, DSUALM10H (University of Almeria Dataset of 10 household appliances with harmonics) was developed , which as its name suggests expanded the initial version with 10 appliances. This new dataset includes 150+ electrical measurements with I, V and W transients, using the new version of the high-precision OpenZmeter v2 for  greater accuracy.In June 2023, DSUALM10H (University of Almeria Dataset of 10 household appliances with harmonics) was developed , which as its name suggests expanded the initial version with 10 appliances. This new dataset includes 150+ electrical measurements with I, V and W transients, using the new version of the high-precision  OpenZmeter v2 for greater accuracy.
 
 The three three-phase OZM v2 devices used to generate this dataset provide a total of twelve measurement channels, one of which is reserved for aggregation of the rest. The use of the OZM API was vital for acquiring operational data from multiple devices over extended periods of time. However, some fields required adaptation for integration with NILMTK, which ensured accurate recording of consumption data and storage of metadata in the new dataset.The three three-phase OZM v2 devices used to generate this dataset provide a total of twelve measurement channels, one of which is reserved for aggregation of the rest. The use of the OZM API was vital for acquiring operational data from multiple devices over extended periods of time. However, some fields required adaptation for integration with NILMTK, which ensured accurate recording of consumption data and storage of metadata in the new dataset.
 
@@ -46,7 +45,6 @@ The primary IP X.X.X.X.100 meter (channel 1) was used for the aggregate measurem
 
 
 ### DOWNLOADS OF THE DATASETS
-
 
 
 -DSUALM10 can be downloaded from the repository (https://github.com/crn565/10_APLICATIVOS_SIN_ARMONICOS):
@@ -83,8 +81,7 @@ Furthermore, it is worth noting that each H5 file that we generate from the meas
 
 Furthermore, it is worth noting that each H5 file that we generate from the measurement files will not only contain the collected measurements that we are interested in for each meter, but also all the metadata of the new dataset.
 
-Likewise, depending on the version of oZm, the number of applications, and whether harmonics are to be processed, we will generate 4 new datasets: two new datasets (with or without harmonics) for oZm v1 with 5 applications plus the aggregate and two other new datasets (with or without harmonics) for oZm v2 with 10 applications plus the aggregate. Similarly for the OMPM as it does not support harmonics we will create only one new dataset with 5 applicatives plus the aggregate.Likewise, depending on the version of oZm, the number of applications, and whether harmonics are to be processed, we will generate 4 new datasets: two new datasets (with or without harmonics) for oZm v1 with 5 applications plus the aggregate and two other new datasets (with or without harmonics) for oZm v2 with 10 applications plus the aggregate. Similarly for the OMPM as it does not support harmonics we will create only one new dataset with 5 applicatives plus the aggregate.
-
+Likewise, depending on the version of oZm, the number of applications, and whether harmonics are to be processed, we will generate 4 new datasets: two new datasets (with or without harmonics) for oZm v1 with 5 applications plus the aggregate and two other new datasets (with or without harmonics) for oZm v2 with 10 applications plus the aggregate. Similarly for the OMPM as it does not support harmonics we will create only one new dataset with 5 applicatives plus the aggregate.
 
 NILMTK uses standardised dataset formats (see section 2.8 entitled "Public DS"), but given the exclusivity of the data offered by both versions of oZm (and later OMPM), we required a new data format, for which we created 4 new functions to generate the different datasets*. *  As we can intuit, these new converters, although based on the IAWE converter, contain major differences because 13-digit timestamp support has been included, as well as new measurements and they also differ in the harmonics support, and in the number or type of appliances
 supported.
@@ -112,7 +109,7 @@ Regarding the processing of harmonics, both with the data provided by oZm v1 and
 Precisely, we can see more clearly the configuration of all the necessary files for the new converters, as well as the required directory structure.
 ![](./images/image2.png)
 
-Let's take a look at the contents of these files, for which, let's start by looking at the file *building1. yaml,* whose content we can see in the list in *yaml* format that, according to the converter, in this case ualm5, we will locate in the route "*C:\C:\Usersersuario\anaconda3\envs\\nilmtk-env\Librium\site-packages\nilmtk\dataset_converters\ualm5\metadata\building1. yam)*," where in this case the 5 devices plus the aggregate (all of type oZm v1), and the name of the electrical devices to which they are connected are configured.Let's take a look at the contents of these files, for which, let's start by looking at the file *building1. yaml,* whose content we can see in the list in *yaml* format that, according to the converter, in this case ualm5, we will locate in the route "*C:\C:\Usersersuario\anaconda3\envs\\nilmtk-env\Librium\site-packages\nilmtk\dataset_converters\ualm5\metadata\building1. yam)*," where in this case the 5 devices plus the aggregate (all of type oZm v1), and the name of the electrical devices to which they are connected are configured.
+Let's take a look at the contents of these files, for which, let's start by looking at the file *building1. yaml,* whose content we can see in the list in *yaml* format that, according to the converter, in this case ualm5, we will locate in the route "*C:\C:\Usersersuario\anaconda3\envs\\nilmtk-env\Librium\site-packages\nilmtk\dataset_converters\ualm5\metadata\building1. yam)*," where in this case the 5 devices plus the aggregate (all of type oZm v1), and the name of the electrical devices to which they are connected are configured.
 
 ![](./images/image3.png)
 
@@ -120,14 +117,13 @@ As we can deduce from the previous list we have 6 meters (all oZm v1), being num
 
 It is easy to understand that this file is identical for the two converters used with oZm v1 (with or without harmonics) as both contain the same applications, but it is different from the files used in the converters to process the data coming from oZm v2 (with or without harmonics) as the number of applications is increased in this case.
 
-If we visualise the content of the *dataset.yaml* file, in the list in *yaml* format, we can see how the rest of the metadata that may be of interest to the researcher are specified, such as the date, the geographic location or simply a contact method, metadata that we will obviously also associate to the dataset.As we can deduce from the previous list we have 6 meters (all oZm v1), being number one the main one from the conceptual point of view (i.e. the general one or *Main*), and the rest, individualised meters connected to 5 different appliances.
+If we visualise the content of the *dataset.yaml* file, in the list in *yaml* format, we can see how the rest of the metadata that may be of interest to the researcher are specified, such as the date, the geographic location or simply a contact method, metadata that we will obviously also associate to the dataset.
 
 ![](./images/image4.png)
 
 It is easy to deduce that this file is identical to that of the converter with harmonic support, given that they start from the same measurements, being also very similar to the one used with the oZm v2 measurements (except for the section referring to the publication date).
 
-Finally, we also have in *yaml* format, the measurement file *meter_devices.yaml*. In this file there are marked differences both in the measurements obtained with oZm v1 or oZm v2 and in the harmonics support, because although they share the number of fundamental measurements supported by the different oZm's (such as active, apparent and reactive power, frequency, voltage, current and power factor) in the data sets with harmonics support we will also add 150 measurements corresponding to the harmonics up to order 50 of the voltage, current and power.It is easy to deduce that this file is identical to that of the converter with harmonic support, given that they start from the same measurements, being also very similar to the one used with the oZm v2 measurements (except for the section referring to the publication date).
-
+Finally, we also have in *yaml* format, the measurement file *meter_devices.yaml*. In this file there are marked differences both in the measurements obtained with oZm v1 or oZm v2 and in the harmonics support, because although they share the number of fundamental measurements supported by the different oZm's (such as active, apparent and reactive power, frequency, voltage, current and power factor) in the data sets with harmonics support we will also add 150 measurements corresponding to the harmonics up to order 50 of the voltage, current and power.
 
 In this case, as the measurements taken with oZm v1 and oZm v2 are identical, this associated file, given that it is associated with the type of meter, will be identical in both versions, only differing in the harmonics support, as the latter contains a greater number of measurements. Therefore, it is important to highlight at this point how the measurement file must be closely related to the data file converter, which is why, in this Thesis, given that we are seeking to evaluate the possible improvement of harmonics processing in NILMTK, we will have for the data provided by oZm v1 and oZm v2 different converters with all the necessary support (conversion function, configuration files, etc.).
 
@@ -143,8 +139,7 @@ It should be noted that the original NILMTK format for the *timestamp* field is 
 
 Furthermore, with respect to the metadata to be processed in the different converters, these differ, given that some support only power (real, reactive and apparent), voltage, current, frequency and power factor, but in others we also add harmonics up to order 50 of the current, voltage and power.
 
-As each measurement file is obtained in the previous phase from the files of the different oZm's, it is necessary to number them from 1 to the maximum number of applications (6 in the case of oZm v1 and 11 in the case of oZm v2), with Nº 1 corresponding to the main meter and the rest
-belonging to the sub-meters associated with the electrical appliances.
+As each measurement file is obtained in the previous phase from the files of the different oZm's, it is necessary to number them from 1 to the maximum number of applications (6 in the case of oZm v1 and 11 in the case of oZm v2), with Nº 1 corresponding to the main meter and the rest belonging to the sub-meters associated with the electrical appliances.
 To do this, each new function accesses all the aforementioned measurement data files located in the input folder "/*electricity/",* using the tag file *labels.csv,* a process that is shown in the following figure.
 
 > [](./images/image6.jpg)
