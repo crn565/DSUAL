@@ -19,4 +19,4 @@ from .ualm5t.convert_ualmt import convert_ualmt # Convert DSUALMH dataset (harmo
 from .ualm10.convert_ualm10 import convert_ualm10 # Convert DSUALM10 dataset
 from .ualmt10H.convert_ualmt10H import convert_ualmt10H # Convert DSUALM10H dataset (harmonics support)
 from ompm.convert_ualm2 import convert_ualm2 # Convert UALM2 dataset
-from ompm.convert_ualm2 import convert_ualm22 # Convert UALM3 dataset (only aggregated)
+from ompm.convert_ualm22 import convert_ualm22 # Convert UALM3 dataset (only aggregated)
